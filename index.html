@@ -568,34 +568,48 @@
     <!-- Workflow Section -->
     <section id="workflow">
         <div class="container">
-            <h2 class="section-title fade-in">Project Workflow</h2>
+            <h2 class="section-title fade-in">Project Workflow Explanation</h2>
             <div class="workflow-container">
                 <div class="workflow-step slide-in-left">
                     <div class="step-number">1</div>
                     <div class="step-content">
-                        <h3 class="step-title">Data Collection</h3>
-                        <p>Explanation of the first step in your workflow, describing how data is collected and processed initially.</p>
+                        <h3 class="step-title">Laptop (Client)</h3>
+                        <p>The user accesses the web application using a browser on their laptop. The user sends a request (e.g., login, fetch data, submit form) through the web interface.</p>
                     </div>
                 </div>
                 <div class="workflow-step slide-in-right">
                     <div class="step-number">2</div>
                     <div class="step-content">
-                        <h3 class="step-title">Cloud Processing</h3>
-                        <p>Details about how the data is processed in the cloud environment, including transformations and analyses.</p>
+                        <h3 class="step-title">Web Application (Frontend)</h3>
+                        <p>The frontend built with HTML/CSS/JavaScript captures the request and sends it to the backend through API endpoints. This is typically done via HTTP/HTTPS calls.</p>
                     </div>
                 </div>
                 <div class="workflow-step slide-in-left">
                     <div class="step-number">3</div>
                     <div class="step-content">
-                        <h3 class="step-title">Model Integration</h3>
-                        <p>Information about how the processed data integrates with your computational model.</p>
+                        <h3 class="step-title">Cloud Services (Middleware Layer)</h3>
+                        <p>These API requests are routed through cloud services like an API Gateway, Load Balancer, or Cloud Function. These services manage traffic, ensure security (e.g., authentication), and forward the requests to the appropriate backend service.</p>
                     </div>
                 </div>
                 <div class="workflow-step slide-in-right">
                     <div class="step-number">4</div>
                     <div class="step-content">
-                        <h3 class="step-title">Results & Visualization</h3>
-                        <p>Explanation of how results are generated and visualized for end users.</p>
+                        <h3 class="step-title">Server (Backend Logic)</h3>
+                        <p>The backend server, hosted on a cloud VM or container (e.g., EC2, App Engine, Azure App Service), processes the logic. It authenticates the user, validates input, applies business logic, and prepares a database query.</p>
+                    </div>
+                </div>
+                                <div class="workflow-step slide-in-left">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Database (Data Layer)</h3>
+                        <p>The server interacts with a cloud-based database (e.g., MySQL, PostgreSQL, MongoDB on cloud). It either fetches data (for a GET request) or stores/updates it (for POST/PUT/DELETE). The response is sent back to the server.</p>
+                    </div>
+                </div>
+                                <div class="workflow-step slide-in-left">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Response Flow</h3>
+                        <p>After receiving the data from the database, the server constructs the response and sends it back through the cloud services to the frontend web application, which displays the result to the user on the laptop.</p>
                     </div>
                 </div>
             </div>
