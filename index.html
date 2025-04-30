@@ -14,6 +14,44 @@
             --white-color: #f8f9fa;
             --background-gradient: linear-gradient(135deg, var(--dark-color), var(--secondary-color));
         }
+
+        /* PDF View Button Styling */
+        .view-pdf {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: linear-gradient(45deg, var(--dark-color), var(--accent-color));
+            color: var(--white-color);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid var(--light-color);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 250px;
+            text-align: center;
+        }
+        
+        .view-pdf:hover {
+            background: linear-gradient(45deg, var(--accent-color), var(--dark-color));
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            border-color: var(--white-color);
+        }
+        
+        .view-pdf:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        .pdf-icon {
+            margin-right: 10px;
+            font-style: normal;
+            font-size: 1.2em;
+        }
         
         * {
             margin: 0;
